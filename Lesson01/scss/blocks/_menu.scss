@@ -1,0 +1,36 @@
+.menu {
+  display: flex;
+  justify-content: center;
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    width: calc(100% - 640px);
+  }
+
+  &__cart-button {
+    width: 125px;
+    height: 30px;
+  }
+}
+
+.button {
+  display: block;
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 1px solid --clr-black;
+  border-radius: 3px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $clr-hvr-text;
+    background-color: #F0F8FF;
+    border: 2px solid #7CB9E8;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+  }
+}
