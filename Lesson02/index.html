@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='./css/style.css'>
+  <title>eShop</title>
+</head>
+
+<body>
+  <header class='container'>
+    <div class='menu'>
+      <div class='menu__btns'>
+        <button class='menu__cart-button button' type='button'>
+          <i class='fas fa-shopping-cart'></i>
+          Корзина
+        </button>
+        <button class='menu__user-button button' type='button'>
+          <i class='fas fa-user'></i>
+          ...
+        </button>
+        <button class='menu__shipping-button button' type='button'>
+          <i class='fas fa-shipping-fast'></i>
+          ...
+        </button>
+      </div>
+    </div>
+    <div class='cart hidden'>
+      <div class='cart__window'>
+        <div class='cart__content'>
+          <div class='cart__header'>
+            <h3 class='cart__title'>Корзина</h3>
+            <a href='#close' title='Закрыть' class='cart__close'>
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <div class='cart__body'>
+            <p class='cart__empty'>Ваша корзина пуста...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class='goods container'>
+    <ul class='goods__list'></ul>
+  </main>
+
+  <script src='script.js'></script>
+  <script src='https://kit.fontawesome.com/3b9a459dca.js' crossorigin='anonymous'></script>
+</body>
+
+</html>
