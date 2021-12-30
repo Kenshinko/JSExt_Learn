@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='./css/style.css'>
+  <title>eShop</title>
+</head>
+
+<body>
+  <header class='container'>
+    <div class='menu'>
+      <div class='menu__btns'>
+        <button class='menu__cart-button large-button' type='button'>
+          <i class='fas fa-shopping-cart'></i>
+          Корзина
+        </button>
+        <button class='menu__user-button large-button' type='button'>
+          <i class='fas fa-user'></i>
+          ...
+        </button>
+        <button class='menu__shipping-button large-button' type='button'>
+          <i class='fas fa-shipping-fast'></i>
+          ...
+        </button>
+      </div>
+    </div>
+    <div class='cart hidden'>
+      <div class='cart__window'>
+        <div class='cart__content'>
+          <div class='cart__header'>
+            <h3 class='cart__title'>Корзина</h3>
+            <button class='cart__close' type="button" title='Закрыть'><i class="fas fa-times"></i></button>
+          </div>
+          <div class='cart__body'>
+            <div class='cart__table table'>
+              <ul class="table__row-header">
+                <li class="table__row-cell table__title">Наименование</li>
+                <li class="table__row-cell table__title">Цена</li>
+                <li class="table__row-cell table__title">Стоимость</li>
+                <li class="table__row-cell table__title">Количество
+                </li>
+              </ul>
+              <div class='cart__empty'>Ваша корзина пуста...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class='goods container'>
+    <ul class='goods__list'></ul>
+    <aside class="regexp">
+      <div class="regexp__text">
+        'I'm going to London for two weeks,' said Alice.
+        'Put on your jacket, please,' mother said to him. 'It's freezing today.'
+        'I'll call you tomorrow,' she said. 'Take care.'
+        'It's my umbrella,' he said crossly. 'Yours is in your room.'
+        'Well, it's supposed to be haunted, but so far nobody has seen any ghosts,' Blakely replied.
+        'Alright, it's settled then.'
+        'What's the plan for today?' Jack asked.
+        'I don't know,' said Martin. 'Watch a movie, maybe.'
+        'So what are we going to do?' Helen sighed. 'I'm bored.'
+      </div>
+      <p class="regexp__tip">Чтобы заменить одиночные кавычки на двойные вставте выражение '(?![a-z]).</p>
+      <div class="regexp__search">
+        <input class="regexp__input" type="text" value="'(?![a-z])">
+        <button class="regexp__button small-button" type="button">Заменить</button>
+      </div>
+    </aside>
+  </main>
+
+  <script src='script.js'></script>
+  <script src='https://kit.fontawesome.com/3b9a459dca.js' crossorigin='anonymous'></script>
+</body>
+
+</html>
