@@ -1,0 +1,1 @@
+[{"id":1,"name":"iPhone","price":300,"img":"https://source.unsplash.com/random/240x320?sig=${Math.trunc(Math.random() * 25)}"}]
