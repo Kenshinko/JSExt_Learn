@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='./css/style.css'>
+  <title>eShop</title>
+</head>
+
+<body>
+
+  <div id="application">
+    <header class="container">
+      <div class='menu'>
+        <div class='menu__btns'>
+          <button v-on:click="showCart" class='menu__cart-button large-button' type='button'>
+            <i class='fas fa-shopping-cart'></i>
+            Корзина
+          </button>
+          <button class='menu__user-button large-button' type='button'>
+            <i class='fas fa-user'></i>
+            ...
+          </button>
+          <button class='menu__shipping-button large-button' type='button'>
+            <i class='fas fa-shipping-fast'></i>
+            ...
+          </button>
+        </div>
+      </div>
+      <cart v-if="isCartVisible" :items="cartList" v-on:removefromcart="deleteProduct" v-on:close-cart="showCart"></cart>
+    </header>
+
+    <main class="goods container">
+      <showcase :list="showcaseList" v-on:addtocart="addProduct"></showcase>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src='https://kit.fontawesome.com/3b9a459dca.js' crossorigin='anonymous'></script>
+
+  <script src='vuecomp_showcase.js'></script>
+  <script src='vuecomp_card.js'></script>
+  <script src='vuecomp_cart.js'></script>
+  <script src='vue_main.js'></script>
+</body>
+
+</html>
